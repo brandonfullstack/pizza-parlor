@@ -5,9 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Pizza Parlor</title>
 </head>
 <body>
-  
+  <form id='theForm'>
+    <label>What size pie would you like?</label>
+    <select id="pizzaSize" required>
+      <option>Choose</option>
+      <option value="1">Small</option>
+      <option value="2">Medium</option>
+      <option value="3">Large</option>
+      <option value="4">Giant</option>
+      <option value="5">Massive</option>
+    </select>
+    <br>
+    <br>
+    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+    <br>
+    <input type="checkbox" id="extraCheese" name="toppings" value="extraCheese">
+    <label for="extraCheese">Extra Cheese</label>
+    <br>
+    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <br>
+    <input type="checkbox" id="onions" name="toppings" value="onions">
+    <label for="onions">Onions</label>
+    <br>
+    <input type="checkbox" id="sausage" name="toppings" value="sausage">
+    <label for="sausage">Sausage</label>
+    <br>
+    <input type="checkbox" id="blackOlives" name="toppings" value="blackOlives">
+    <label for="blackOlives">Black Olives</label>
+    <br>
+    <input type="checkbox" id="greenPeppers" name="toppings" value="greenPeppers">
+    <label for="greenPeppers">Green Peppers</label>
+    <br>
+    <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+    <label for="pineapple">Pineapple</label>
+    <br>
+    <input type="checkbox" id="none" name="toppings" value="none">
+    <label for="none">None</label>
+    <br>
+    <br>
+    <button type='submit' class='btn'>submit</button>
+  </form>
+  <p id="result"></p>
 </body>
 </html>
