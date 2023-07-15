@@ -12,11 +12,9 @@
     <label>What size pie would you like?</label>
     <select id="pizzaSize" required>
       <option>Choose</option>
-      <option value="1">Small</option>
-      <option value="2">Medium</option>
-      <option value="3">Large</option>
-      <option value="4">Giant</option>
-      <option value="5">Massive</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
     </select>
     <br>
     <br>
@@ -44,12 +42,10 @@
     <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
     <label for="pineapple">Pineapple</label>
     <br>
-    <input type="checkbox" id="none" name="toppings" value="none">
-    <label for="none">None</label>
-    <br>
     <br>
     <button type='submit' class='btn'>submit</button>
   </form>
   <p id="result"></p>
+  <p id="cost"></p>
 </body>
 </html>
