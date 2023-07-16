@@ -11,9 +11,9 @@ Pizza.prototype.calculateCost = function () {
   const sizePrice = {
     "small": 0,
     "medium": 5,
-    "large": 7,
-    "huge": 9,
-    "massive": 12
+    "large": 10,
+    "huge": 20,
+    "massive": 30
   };
 
   let cost = basePrice + (this.toppings.length * toppingPrice);
@@ -38,7 +38,13 @@ function displayToppings(event) {
   toppingsList.forEach(function (topping) {
     selectedToppings.push(topping.value)
   })
+
   myPizza = new Pizza(selectedToppings, pizzaSize);
-  document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with: ${selectedToppings}`
+
+  if (selectedToppings.length === 0 || selectedToppings.length === NaN) {
+    document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with no additional toppings.`;
+  } else
+  document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with: ${selectedToppings.join(', ')}`
+
   document.getElementById("cost").innerText = `$ ${myPizza.calculateCost()}`
 }
