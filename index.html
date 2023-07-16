@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,53 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
+
 <body>
-  <form id='theForm'>
-    <h3>Start your order</h3>
-    <label>Size:</label>
-    <select id="pizzaSize" required>
-      <option>Choose</option>
-      <option selected="selected" value="small">Small $10</option>
-      <option value="medium">Medium $15</option>
-      <option value="large">Large $20</option>
-      <option value="huge">Huge $30</option>
-      <option value="massive">Massive $40</option>
-    </select>
-    <br>
-    <br>
-    <h3>Each topping is $3</h3>
-    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
-    <label for="pepperoni">Pepperoni</label>
-    <br>
-    <input type="checkbox" id="extraCheese" name="toppings" value="extra cheese">
-    <label for="extraCheese">Extra Cheese</label>
-    <br>
-    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
-    <label for="mushrooms">Mushrooms</label>
-    <br>
-    <input type="checkbox" id="onions" name="toppings" value="onions">
-    <label for="onions">Onions</label>
-    <br>
-    <input type="checkbox" id="sausage" name="toppings" value="sausage">
-    <label for="sausage">Sausage</label>
-    <br>
-    <input type="checkbox" id="blackOlives" name="toppings" value="black olives">
-    <label for="blackOlives">Black Olives</label>
-    <br>
-    <input type="checkbox" id="greenPeppers" name="toppings" value="green peppers">
-    <label for="greenPeppers">Green Peppers</label>
-    <br>
-    <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
-    <label for="pineapple">Pineapple</label>
-    <br>
-    <br>
-    <button type='submit' class='btn'>submit</button>
-  </form>
-  <p id="result"></p>
+  <main class="container">
+    <h1>Pizza Parlor</h1>
+    <form id='theForm'>
+      <h3>-Online order form-</h3>
+      <label>Size:</label>
+      <select id="pizzaSize" required>
+        <option>Choose</option>
+        <option selected="selected" value="small">Small $10</option>
+        <option value="medium">Medium $15</option>
+        <option value="large">Large $20</option>
+        <option value="huge">Huge $30</option>
+        <option value="massive">Massive $40</option>
+      </select>
+      <br>
+      <h4>Each topping is $3</h4>
+      <input type="checkbox" id="extraCheese" name="toppings" value="extra cheese">
+      <label for="extraCheese">Extra Cheese</label>
+      <br>
+      <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+      <label for="pepperoni">Pepperoni</label>
+      <br>
+      <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+      <label for="mushrooms">Mushrooms</label>
+      <br>
+      <input type="checkbox" id="onions" name="toppings" value="onions">
+      <label for="onions">Onions</label>
+      <br>
+      <input type="checkbox" id="sausage" name="toppings" value="sausage">
+      <label for="sausage">Sausage</label>
+      <br>
+      <input type="checkbox" id="blackOlives" name="toppings" value="black olives">
+      <label for="blackOlives">Black Olives</label>
+      <br>
+      <input type="checkbox" id="greenPeppers" name="toppings" value="green peppers">
+      <label for="greenPeppers">Green Peppers</label>
+      <br>
+      <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+      <label for="pineapple">Pineapple</label>
+      <br>
+      <br>
+      <button type='submit' class='btn'>Order</button>
+    </form>
+  </main>
+  <div id="return-field" class="container">
+    <p id="result"></p>
+  </div>
 </body>
 </html>

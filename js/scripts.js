@@ -42,11 +42,11 @@ function displayToppings(event) {
   myPizza = new Pizza(selectedToppings, pizzaSize);
 
   if (selectedToppings.length === 0 || selectedToppings.length === NaN) {
-    document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with no additional toppings for $${myPizza.calculateCost()}.`;
+    document.getElementById("result").innerText = `You ordered a ${pizzaSize} pizza with no additional toppings for $${myPizza.calculateCost()}.`;
   } else if (selectedToppings.length === 2) {
-    document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with ${selectedToppings[0] + " and " + selectedToppings[1]} for $${myPizza.calculateCost()}.`
+    document.getElementById("result").innerText = `You ordered a ${pizzaSize} pizza with ${selectedToppings[0] + " and " + selectedToppings[1]} for $${myPizza.calculateCost()}.`
   } else if (selectedToppings.length >= 3) {
-    document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with ${selectedToppings.join(', ').slice(0, -1) + ", and " + selectedToppings.join(', ').slice(-1)} for $${myPizza.calculateCost()}.`
+    document.getElementById("result").innerText = `You ordered a ${pizzaSize} pizza with ${selectedToppings.slice(0, -1).join(', ') + ", and " + selectedToppings.slice(-1)} for $${myPizza.calculateCost()}.`
   } else
-    document.getElementById("result").innerText = `You selected a ${pizzaSize} pizza with ${selectedToppings} for $${myPizza.calculateCost()}.`
-}
+    document.getElementById("result").innerText = `You ordered a ${pizzaSize} pizza with ${selectedToppings} for $${myPizza.calculateCost()}.`
+  }
